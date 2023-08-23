@@ -202,8 +202,34 @@
                   <a name="compassLoginTest">
                   </a> <!-- compassLoginTest -->
                   <span class="method-name">compassLoginTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at test.UISanitySuite.compassLoginTest(UISanitySuite.java:45)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&quot;login-username&quot;]&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;rivigo-ThinkPad-L480&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-58-generic&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /tmp/.com.google.Chrome.lvvK1s}, goog:chromeOptions: {debuggerAddress: localhost:41149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 446083e278a6630c1802f24d447a48ac
+*** Element info: {Using=xpath, value=//input[@id=&quot;login-username&quot;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at ObjectRepository.CompassLoginPageOR.inp_enteruserName(CompassLoginPageOR.java:29)
+	at test.UISanitySuite.compassLoginTest(UISanitySuite.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -366,20 +392,34 @@
                   <a name="compassLoginTest">
                   </a> <!-- compassLoginTest -->
                   <span class="method-name">compassLoginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Login failed: Invalid username or password}
-  (Session info: chrome=108.0.5359.124): Login failed: Invalid username or password
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&quot;login-username&quot;]&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;rivigo-ThinkPad-L480&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-58-generic&apos;, java.version: &apos;11.0.17&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /tmp/.com.google.Chrome.276maA}, goog:chromeOptions: {debuggerAddress: localhost:37613}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8ff84559c99655ab74c332cd1d5c539
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /tmp/.com.google.Chrome.lvvK1s}, goog:chromeOptions: {debuggerAddress: localhost:41149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 446083e278a6630c1802f24d447a48ac
+*** Element info: {Using=xpath, value=//input[@id=&quot;login-username&quot;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at test.UISanitySuite.compassLoginTest(UISanitySuite.java:33)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at ObjectRepository.CompassLoginPageOR.inp_enteruserName(CompassLoginPageOR.java:29)
+	at test.UISanitySuite.compassLoginTest(UISanitySuite.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -417,7 +457,7 @@ Session ID: e8ff84559c99655ab74c332cd1d5c539
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--986029741/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--1852887207/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -470,19 +510,19 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'compassLoginTest')
 data.setCell(0, 2, 'test.UISanitySuite')
-data.setCell(0, 3, 12832);
+data.setCell(0, 3, 15934);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'compassLoginTest')
 data.setCell(1, 2, 'test.UISanitySuite')
-data.setCell(1, 3, 5433);
+data.setCell(1, 3, 10538);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'compassLoginTest')
 data.setCell(2, 2, 'test.UISanitySuite')
-data.setCell(2, 3, 115);
+data.setCell(2, 3, 10509);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'VendorCreationTest')
 data.setCell(3, 2, 'test.UISanitySuite')
-data.setCell(3, 3, 3);
+data.setCell(3, 3, 4);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'VendorCreationTest')
 data.setCell(4, 2, 'test.UISanitySuite')
@@ -490,12 +530,12 @@ data.setCell(4, 3, 3);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'VendorCreationTest')
 data.setCell(5, 2, 'test.UISanitySuite')
-data.setCell(5, 3, 1);
+data.setCell(5, 3, 3);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -528,39 +568,39 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">95352 ms</span>
+                <span class="method-start">3511 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">compassLoginTest</span>
-                <span class="method-start">96824 ms</span>
+                <span class="method-start">3624 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">compassLoginTest</span>
-                <span class="method-start">114665 ms</span>
+                <span class="method-start">24570 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">compassLoginTest</span>
-                <span class="method-start">119788 ms</span>
+                <span class="method-start">40088 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VendorCreationTest</span>
-                <span class="method-start">125229 ms</span>
+                <span class="method-start">50638 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VendorCreationTest</span>
-                <span class="method-start">130235 ms</span>
+                <span class="method-start">55648 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">VendorCreationTest</span>
-                <span class="method-start">135242 ms</span>
+                <span class="method-start">60657 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">135253 ms</span>
+                <span class="method-start">60667 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

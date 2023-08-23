@@ -35,7 +35,7 @@ public class UISanitySuite extends BaseclassUI
 		CompassLoginPageOR login = new CompassLoginPageOR(driver);
 		login.inp_enteruserName("alka.sahu@rivigo.com");
 		test.log(LogStatus.INFO,"enterusername");
-		login.inp_enterpasswordName("Aug@123!");
+		login.inp_enterpasswordName("mLL@123!");
 		test.log(LogStatus.INFO,"enterpasswordname");
 		login.inp_clickOnLoginButton();
 		test.log(LogStatus.INFO,"click on login button");
